@@ -65,7 +65,7 @@ def createStartCommand(presetNameFolder, presetName):
         createSh(linkDirectory, freeCadExecutable, userCfg, systemCfg)
 
 def createBat(linkDirectory, executable, userCfg, systemCfg):
-    linkFilePath = os.path.join(linkDirectory, 'FreeCAD %s.bat' % (presetName))
+    linkFilePath = os.path.join(linkDirectory, 'FreeCAD_%s.bat' % (presetName))
     linkFile = open(linkFilePath, 'w')
 
     try:
